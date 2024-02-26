@@ -1,38 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
+  height: 100vh;
+  background-image: url("assets/cafe-landing.jpg");
+  background-size: cover;
+  /* position: absolute; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 50%;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ------ NAV STYLING ------ */
+nav {
+  height: 7vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  position: relative;
+  z-index: 100;
+  border-bottom: 1px solid white;
+  margin: 0 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav h1 {
+  font-weight: 400;
 }
