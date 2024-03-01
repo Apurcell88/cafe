@@ -1,7 +1,10 @@
 const Landing = () => {
   return (
     <main className="landing--main-container">
-      <article className="landing--flex-container" id="flex-bottom">
+      <article
+        className="landing--flex-container landing--flex-left-container"
+        id="flex-bottom"
+      >
         <div>
           <p id="landing--discount">10% discount on all menu items</p>
           <p id="landing--discount-code">code VEGETARIAN CARD</p>
@@ -13,7 +16,7 @@ const Landing = () => {
           </p>
         </div>
       </article>
-      <article className="landing--flex-container">
+      <article className="landing--flex-container landing--flex-bottom-container">
         <h2 className="text-center font-weight-400">
           ABOUT <span className="ruthie">Veggie</span>
         </h2>
@@ -31,7 +34,7 @@ const Landing = () => {
       </article>
 
       <article
-        className="landing--flex-container"
+        className="landing--flex-container landing--flex-right-container"
         id="landing--established-container"
       >
         <h2>WE BELIEVE WELL-BEING IS FOR EVERYONE</h2>
