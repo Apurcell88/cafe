@@ -21,6 +21,14 @@
   z-index: 1;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
 /* ------ NAV STYLING ------ */
 nav {
   height: 7vh;
@@ -36,4 +44,76 @@ nav {
 
 nav h1 {
   font-weight: 400;
+}
+
+/* ------ LANDING STYLING ------ */
+.ruthie {
+  font-family: "Ruthie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+}
+
+.negative-margin {
+  margin: -45px;
+}
+
+.landing--main-container {
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+  align-items: center;
+  gap: 18%;
+}
+
+.landing--flex-container {
+  color: white;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  width: 33%;
+}
+
+#landing--discount {
+}
+
+.landing--contact-container {
+  transform: rotate(-10deg);
+}
+
+.landing--contact {
+  padding-left: 1rem;
+}
+
+#flex-bottom {
+  align-self: flex-end;
+  padding-left: 1rem;
+}
+
+.landing--menu-text {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+#landing--menu {
+  transform: skewX(-15deg);
+}
+
+#landing--cart-btn {
+  padding: 3rem;
+  background: transparent;
+  border: solid white;
+  color: white;
+  border-radius: 50%;
+  outline: 0;
+}
+
+#landing--established-container {
+  gap: 5px;
+  text-align: center;
+  align-self: flex-end;
+  margin-right: 1rem;
 }
