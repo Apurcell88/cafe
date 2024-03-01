@@ -67,6 +67,23 @@
 }
 
 @keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0); /* start and end position */
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px); /* move left */
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px); /* move right */
+  }
 }
 
 /* ------ NAV STYLING ------ */
@@ -132,6 +149,11 @@ nav h1 {
 
 .landing--contact {
   padding-left: 1rem;
+  position: relative;
+}
+
+.landing--contact:hover {
+  animation: shake 0.5s ease infinite;
 }
 
 #flex-bottom {
@@ -160,6 +182,11 @@ nav h1 {
   color: white;
   border-radius: 50%;
   outline: 0;
+  transition: border 0.3s ease-in;
+}
+
+#landing--cart-btn:hover {
+  border: solid #69e765;
 }
 
 #landing--established-container {
