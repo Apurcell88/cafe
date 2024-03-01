@@ -5,7 +5,7 @@ const Landing = () => {
         className="landing--flex-container landing--flex-left-container"
         id="flex-bottom"
       >
-        <div>
+        <div className="landing--discount-container">
           <p id="landing--discount">10% discount on all menu items</p>
           <p id="landing--discount-code">code VEGETARIAN CARD</p>
         </div>
@@ -22,12 +22,14 @@ const Landing = () => {
         </h2>
 
         <h2 className="text-center">
-          <p className="ruthie negative-margin">Show</p>
+          <button className="landing--menu-btn">
+            <p className="ruthie negative-margin">Show</p>
 
-          <p className="landing--menu-text">THE</p>
-          <p className="landing--menu-text" id="landing--menu">
-            MENU
-          </p>
+            <p className="landing--menu-text">THE</p>
+            <p className="landing--menu-text" id="landing--menu">
+              MENU
+            </p>
+          </button>
         </h2>
 
         <button id="landing--cart-btn">MY CART</button>
