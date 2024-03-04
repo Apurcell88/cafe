@@ -246,3 +246,25 @@
 }
 
 /* ------ MENU NAV STYLING ------ */
+.menu-nav {
+  background-color: aqua;
+  transform: rotate(-90deg);
+  height: 10vh;
+  width: 50vw;
+  position: absolute;
+  top: 15rem;
+}
+
+.menu-nav--links {
+  display: flex;
+  justify-content: space-around;
+  transform: rotate(-90deg);
+  height: 53vh;
+  width: 50vw;
+  position: absolute;
+  top: 12rem;
+}
+
+.menu-nav--link {
+  list-style: none;
+}

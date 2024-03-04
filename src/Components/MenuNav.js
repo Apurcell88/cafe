@@ -1,13 +1,11 @@
 const MenuNav = () => {
   return (
-    <nav>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
+    <ul className="menu-nav--links">
+      <li className="menu-nav--link">ABOUT</li>
+      <li className="menu-nav--link">THE MENU</li>
+      <li className="menu-nav--link">DELIVERY</li>
+      <li className="menu-nav--link">CONTACT</li>
+    </ul>
   );
 };
 

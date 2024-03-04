@@ -9,6 +9,7 @@ const Landing = ({ displayMenu, setDisplayMenu }) => {
 
   return (
     <div className="landing--main-container">
+      <div className="overlay"></div>
       <Nav />
       <main className="landing--wrapper-container">
         <article
