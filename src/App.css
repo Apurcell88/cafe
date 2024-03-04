@@ -6,9 +6,9 @@
 
 .App {
   /* text-align: center; */
-  height: 100vh;
+  /* height: 100vh;
   background-image: url("assets/cafe-landing.jpg");
-  background-size: cover;
+  background-size: cover; */
   /* position: absolute; */
 }
 
@@ -87,16 +87,16 @@
 }
 
 @keyframes spin {
-  from {
+  0% {
     transforrm: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
 
 /* ------ NAV STYLING ------ */
-nav {
+.landing-nav {
   height: 7vh;
   display: flex;
   justify-content: center;
@@ -110,7 +110,7 @@ nav {
   animation: slideInFromTop 0.5s ease forwards;
 }
 
-nav h1 {
+.landing-nav h1 {
   font-weight: 400;
 }
 
@@ -130,6 +130,7 @@ nav h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .negative-margin {
@@ -142,6 +143,12 @@ nav h1 {
 }
 
 .landing--main-container {
+  height: 100vh;
+  background-image: url("assets/cafe-landing.jpg");
+  background-size: cover;
+}
+
+.landing--wrapper-container {
   display: flex;
   width: 100vw;
   height: 90vh;
@@ -175,7 +182,7 @@ nav h1 {
 }
 
 .landing--discount-container:hover {
-  animation: spin 0.5s ease-in;
+  animation: spin 0.5s ease forwards;
 }
 
 .landing--contact-container {
@@ -237,3 +244,5 @@ nav h1 {
   animation: slideInFromRight 0.5s ease forwards;
   justify-content: flex-end;
 }
+
+/* ------ MENU NAV STYLING ------ */

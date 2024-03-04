@@ -1,13 +1,20 @@
 import "./App.css";
-import Nav from "./Components/Nav";
+import { useState } from "react";
+
 import Landing from "./Components/Landing";
+import Menu from "./Components/Menu";
 
 function App() {
+  const [displayMenu, setDisplayMenu] = useState(false);
+
   return (
     <div className="App">
       <div className="overlay"></div>
-      <Nav />
-      <Landing />
+      {displayMenu ? (
+        <Menu />
+      ) : (
+        <Landing displayMenu={displayMenu} setDisplayMenu={setDisplayMenu} />
+      )}
     </div>
   );
 }
