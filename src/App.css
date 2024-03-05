@@ -268,3 +268,19 @@
 .menu-nav--link {
   list-style: none;
 }
+
+/* ------ MENU STYLING ------ */
+.menu--main-container {
+}
+
+.menu--categories-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4.5rem;
+}
+
+#menu--categories {
+  padding: 0.2rem 2rem 0.2rem 0.5rem;
+  border-radius: 20px;
+  outline: none;
+}

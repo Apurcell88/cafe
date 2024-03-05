@@ -1,0 +1,80 @@
+{
+  "vegetarian_snacks": [
+    {
+      "title": "Hummus with Veggie Sticks",
+      "description": "Creamy chickpea hummus served with fresh carrot, cucumber, and bell pepper sticks. A healthy and flavorful snack option.",
+      "price": "$5.99",
+      "picture": "../src/assets/hummus-with-veggie-sticks.jpeg"
+    },
+    {
+      "title": "Caprese Skewers",
+      "description": "Juicy cherry tomatoes, fresh mozzarella, and basil leaves skewered together and drizzled with balsamic glaze. A delightful vegetarian snack bursting with flavor.",
+      "price": "$7.49",
+      "picture": "../src/assets/caprese-skewers.jpeg"
+    },
+    {
+      "title": "Avocado Toast",
+      "description": "Sliced ripe avocado on toasted whole grain bread, seasoned with sea salt and red pepper flakes. A trendy and satisfying vegetarian snack option.",
+      "price": "$6.99",
+      "picture": "../src/assets/avocado-toast.jpeg"
+    },
+    {
+      "title": "Spinach and Feta Quesadillas",
+      "description": "Grilled tortillas filled with sautéed spinach, creamy feta cheese, and a hint of garlic. Served with salsa and sour cream on the side.",
+      "price": "$8.99",
+      "picture": "../src/assets/veggie-quesadillas.jpeg"
+    }
+  ],
+  "vegetarian_main_dishes": [
+    {
+      "title": "Mushroom Risotto",
+      "description": "Creamy Arborio rice cooked to perfection with a medley of earthy mushrooms, onions, garlic, and Parmesan cheese. A comforting and satisfying vegetarian main dish.",
+      "price": "$12.99",
+      "picture": "../src/assets/mushroom-risotto.jpeg"
+    },
+    {
+      "title": "Vegetable Pad Thai",
+      "description": "Stir-fried rice noodles tossed with an assortment of fresh vegetables, tofu, bean sprouts, and peanuts, infused with tangy tamarind sauce. A vibrant and flavorful vegetarian main dish inspired by Thai cuisine.",
+      "price": "$11.49",
+      "picture": "../src/assets/veggie-pad-thai.jpeg"
+    },
+    {
+      "title": "Eggplant Parmesan",
+      "description": "Slices of tender eggplant, breaded and fried to golden perfection, layered with marinara sauce and melted mozzarella cheese. Served with a side of spaghetti marinara. A classic Italian-inspired vegetarian main dish.",
+      "price": "$13.99",
+      "picture": "../src/assets/eggplant-parmesan.jpeg"
+    },
+    {
+      "title": "Quinoa Stuffed Bell Peppers",
+      "description": "Colorful bell peppers stuffed with a hearty mixture of quinoa, black beans, corn, tomatoes, and spices, topped with melted cheese and baked until tender. A nutritious and flavorful vegetarian main dish.",
+      "price": "$10.99",
+      "picture": "../src/assets/stuffed-peppers.jpeg"
+    }
+  ],
+  "vegetarian_sides": [
+    {
+      "title": "Roasted Garlic Mashed Potatoes",
+      "description": "Creamy mashed potatoes infused with roasted garlic cloves, butter, and cream. A comforting and flavorful vegetarian side dish that pairs perfectly with any main course.",
+      "price": "$4.99",
+      "picture": "../src/assets/mashed-potatoes.jpeg"
+    },
+    {
+      "title": "Grilled Vegetable Platter",
+      "description": "An assortment of seasonal vegetables grilled to perfection, including zucchini, bell peppers, mushrooms, and asparagus. Served with a balsamic glaze for dipping. A vibrant and nutritious vegetarian side dish.",
+      "price": "$6.49",
+      "picture": "../src/assets/veggie-platter.jpeg"
+    },
+    {
+      "title": "Quinoa Salad",
+      "description": "A refreshing salad made with fluffy quinoa, diced cucumber, cherry tomatoes, avocado, and fresh herbs, tossed in a zesty lemon vinaigrette. A light and wholesome vegetarian side dish.",
+      "price": "$6.99",
+      "picture": "../src/assets/quinoa-salad.jpeg"
+    },
+    {
+      "title": "Garlic Butter Green Beans",
+      "description": "Tender green beans sautéed in garlic-infused butter until crisp-tender, seasoned with salt, pepper, and a hint of lemon zest. A simple yet flavorful vegetarian side dish that complements any meal.",
+      "price": "$3.99",
+      "picture": "../src/assets/green-beans.jpeg"
+    }
+  ]
+}
