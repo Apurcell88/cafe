@@ -274,8 +274,7 @@
 }
 
 .menu--categories-container {
-  display: flex;
-  justify-content: flex-end;
+  float: right;
   padding: 4.5rem;
 }
 

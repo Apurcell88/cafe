@@ -1,10 +1,11 @@
 import MenuNav from "./MenuNav";
+import FoodCard from "./FoodCard";
 
 import { useEffect, useState } from "react";
 
 const Menu = () => {
   // STATE MANAGEMENT
-  const [menu, setMenu] = useState({});
+  const [menu, setMenu] = useState([]);
 
   // GET MENU DATA
   useEffect(() => {
@@ -21,16 +22,38 @@ const Menu = () => {
     }
   });
 
+  // FUNCTIONS
+  const handleChange = (e) => {};
+
   return (
     <section className="menu--main-container">
       <MenuNav />
       <article className="menu--categories-container">
         <select name="categories" id="menu--categories">
-          <option value="snacks">SNACKS</option>
-          <option value="mains">MAINS</option>
-          <option value="sweets">SWEETS</option>
+          <option value="snacks" onChange={handleChange}>
+            SNACKS
+          </option>
+          <option value="mains" onChange={handleChange}>
+            MAINS
+          </option>
+          <option value="sides" onChange={handleChange}>
+            SIDES
+          </option>
         </select>
       </article>
+      <div className="menu--food-container">
+        {menu.map((foodItem) => {
+          return (
+            <FoodCard
+              title={foodItem.title}
+              description={foodItem.description}
+              price={foodItem.price}
+              image={foodItem.picture}
+              type={foodItem.type}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };
