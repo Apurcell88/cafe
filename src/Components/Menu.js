@@ -9,6 +9,7 @@ const Menu = () => {
   const [snacks, setSnacks] = useState(true);
   const [mains, setMains] = useState(false);
   const [sides, setSides] = useState(false);
+  const [displayFoodImage, setDisplayFoodImage] = useState(false);
 
   // GET MENU DATA
   useEffect(() => {
@@ -45,14 +46,16 @@ const Menu = () => {
         </select>
       </article>
       <div className="menu--food-container">
-        {menu.map((foodItem) => {
+        {menu.map((foodItem, index) => {
           return (
             <FoodCard
+              key={index}
               title={foodItem.title}
               description={foodItem.description}
               price={foodItem.price}
               image={foodItem.picture}
               type={foodItem.type}
+              id={`food-item-${index + 1}`}
             />
           );
         })}

@@ -286,11 +286,21 @@
 }
 
 /* ------ FOOD CARD STYLING ------ */
+#food-item-1 {
+  transform: rotate(20deg);
+  margin-right: 2rem;
+}
+
+#food-item-2 {
+  transform: rotate(10deg);
+  margin-right: 3rem;
+}
+
 .food-card--main-container {
   display: flex;
   justify-content: space-between;
   margin-left: 4rem;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   max-width: 100vw;
 }
 
@@ -298,4 +308,10 @@
   width: 200px;
   border-radius: 20px;
   margin: 0 1rem;
+}
+
+.food-card--info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
