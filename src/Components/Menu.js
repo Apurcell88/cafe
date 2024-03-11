@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 const Menu = () => {
   // STATE MANAGEMENT
   const [menu, setMenu] = useState([]);
+  const [snacks, setSnacks] = useState(true);
+  const [mains, setMains] = useState(false);
+  const [sides, setSides] = useState(false);
 
   // GET MENU DATA
   useEffect(() => {
