@@ -95,6 +95,15 @@
   }
 }
 
+@keyframes flipOut {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
 /* ------ NAV STYLING ------ */
 .landing-nav {
   height: 7vh;
@@ -271,12 +280,14 @@
 
 /* ------ MENU STYLING ------ */
 .menu--main-container {
+  animation: flipOut 1.5s forwards;
 }
 
 .menu--categories-container {
-  position: absolute;
-  right: 25px;
-  top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+  padding-right: 2rem;
 }
 
 #menu--categories {
@@ -285,8 +296,12 @@
   outline: none;
 }
 
+.menu--food-container {
+  margin-top: 4rem;
+}
+
 /* ------ FOOD CARD STYLING ------ */
-#food-item-1 {
+/* #food-item-1 {
   transform: rotate(20deg);
   margin-right: 2rem;
 }
@@ -294,13 +309,13 @@
 #food-item-2 {
   transform: rotate(10deg);
   margin-right: 3rem;
-}
+} */
 
 .food-card--main-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 4rem;
-  /* margin-top: 6rem; */
+
+  margin-top: 6rem;
   max-width: 100vw;
 }
 
@@ -314,4 +329,5 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 6px;
 }
