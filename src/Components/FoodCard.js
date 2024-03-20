@@ -1,4 +1,4 @@
-const FoodCard = ({ title, description, price, image, type, id }) => {
+const FoodCard = ({ title, desc, price, image, type, id }) => {
   return (
     <div className="food-card--main-container" id={id}>
       <div>
@@ -6,7 +6,7 @@ const FoodCard = ({ title, description, price, image, type, id }) => {
       </div>
       <div className="food-card--info-container">
         <h1 className="food-card--title">{title}</h1>
-        <p className="food-card--desc">{description}</p>
+        <p className="food-card--desc">{desc}</p>
         <p className="food-card--price">{price}</p>
       </div>
     </div>
