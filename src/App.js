@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {displayMenu ? (
-        <Menu />
+        <Menu setDisplayMenu={setDisplayMenu} />
       ) : (
         <Landing displayMenu={displayMenu} setDisplayMenu={setDisplayMenu} />
       )}

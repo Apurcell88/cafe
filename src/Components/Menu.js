@@ -3,7 +3,7 @@ import FoodCard from "./FoodCard";
 
 import { useEffect, useState } from "react";
 
-const Menu = () => {
+const Menu = ({ setDisplayMenu }) => {
   // STATE MANAGEMENT
   const [menu, setMenu] = useState([]);
   const [snacks, setSnacks] = useState([]);
@@ -79,9 +79,13 @@ const Menu = () => {
 
   return (
     <section className="menu--main-container">
-      <MenuNav />
+      <MenuNav setDisplayMenu={setDisplayMenu} />
       <article className="menu--categories-container">
         <select name="categories" id="menu--categories" onChange={handleChange}>
+          <option value="" selected disabled>
+            {" "}
+            CHOOSE AN OPTION
+          </option>
           <option value="snacks">SNACKS</option>
           <option value="mains">MAINS</option>
           <option value="sides">SIDES</option>

@@ -1,7 +1,7 @@
 const FoodCard = ({ title, desc, price, image, type, id }) => {
   return (
     <div className="food-card--main-container" id={id}>
-      <div>
+      <div className="food-card--image-container">
         <img src={image} alt="menu item" className="food-card--image" />
       </div>
       <div className="food-card--info-container">

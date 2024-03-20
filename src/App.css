@@ -255,15 +255,6 @@
 }
 
 /* ------ MENU NAV STYLING ------ */
-.menu-nav {
-  background-color: aqua;
-  transform: rotate(-90deg);
-  height: 10vh;
-  width: 50vw;
-  position: absolute;
-  top: 15rem;
-}
-
 .menu-nav--links {
   display: flex;
   justify-content: space-around;
@@ -276,6 +267,13 @@
 
 .menu-nav--link {
   list-style: none;
+}
+
+.menu-nav--home-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 /* ------ MENU STYLING ------ */
@@ -304,7 +302,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 1.7rem;
-  padding-left: 3rem;
+  margin-left: 3rem;
   margin-top: 6rem;
   max-width: 100vw;
   animation: flipOut 1s forwards;
@@ -329,4 +327,55 @@
 
 .food-card--desc {
   font-weight: 500;
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media screen and (min-width: 1100px) {
+  /* MENU NAV */
+  .menu-nav--links {
+    width: 47vw;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  /* MENU NAV */
+  .menu-nav--links {
+    width: 40vw;
+  }
+
+  .menu--food-container {
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* FOOD CARD */
+  .food-card--main-container {
+    width: 45%;
+  }
+
+  .food-card--title {
+    text-align: end;
+  }
+
+  .food-card--desc {
+    text-align: end;
+  }
+
+  .food-card--image {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .menu-nav--links {
+    width: 35vw;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .menu-nav--links {
+    width: 30vw;
+  }
 }
