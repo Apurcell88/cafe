@@ -31,6 +31,7 @@ const Menu = () => {
     }
   });
 
+  // FUNCTIONS
   // GET CATEGORY FOOD ITEMS
   const populateCategoryFood = () => {
     menu.map((foodItem) => {
@@ -49,7 +50,6 @@ const Menu = () => {
     });
   };
 
-  // FUNCTIONS
   const handleChange = (e) => {
     populateCategoryFood();
 
@@ -73,7 +73,6 @@ const Menu = () => {
         setDisplaySides(true);
         break;
       default:
-        alert("not working");
         break;
     }
   };
